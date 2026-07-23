@@ -1,6 +1,19 @@
 # flux_reactor_tryon_api
 ComfyUI workflow Dockerized via [comfyui-wizard](https://comfy.getrunpod.io).
 Submission: https://comfy.getrunpod.io/dashboard/submissions/kd73nq3vv0qvcknyg6t615r7gx8aqy1d
+## Pull the prebuilt image
+
+We've already built and published this image on Docker Hub:
+
+```bash
+docker pull runpod/comfyui-wizard:kd73nq3vv0qvcknyg6t615r7gx8aqy1d
+docker run --rm --gpus all -p 8188:8188 runpod/comfyui-wizard:kd73nq3vv0qvcknyg6t615r7gx8aqy1d
+```
+
+Then open http://localhost:8188.
+
+---
+
 ## Build it yourself
 ```bash
 docker build -t my-comfy-workflow .
